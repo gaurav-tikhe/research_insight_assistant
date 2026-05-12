@@ -15,6 +15,9 @@ dependencies = [
     "pdfplumber",
     "langchain>=1.2.18",
     "langchain-community>=0.4.1",
+    "faiss-cpu>=1.8.0",
+    "sentence-transformers>=5.4.1",
+    "langchain-huggingface>=1.2.2",
 ]
 
 [project.scripts]

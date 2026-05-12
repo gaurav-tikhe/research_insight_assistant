@@ -1,1 +1,2 @@
-pdf_data_path: data/01_raw
+pdf_data_path: data/01_raw/papers
+query: "How does positional encoding work?"
