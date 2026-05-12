@@ -12,6 +12,8 @@ Split content into meaningful chunks
 Generate embeddings
 Store vectors in FAISS
 Retrieve relevant context for user queries
+
+
 🏗️ Architecture
 PDFs
   ↓
@@ -24,12 +26,16 @@ Embeddings
 FAISS Vector Store
   ↓
 Query → Semantic Retrieval
+
+
 ⚙️ Tech Stack
 Pipeline Orchestration: Kedro
 LLM Framework: LangChain
 Vector Database: FAISS
 Embeddings: Sentence Transformers
 Language: Python 3.12
+
+
 📂 Project Structure
 src/research_insight_assistant/
     pipelines/
@@ -75,13 +81,17 @@ LLM-based answer generation
 Prompt engineering
 API / UI layer
 LLMOps (monitoring, evaluation)
+
+
 🔮 Next Steps
-Integrate LLM (Ollama / HuggingFace)
-Generate answers from retrieved context
-Add evaluation + self-healing RAG
-Deploy via FastAPI / HuggingFace Spaces
+- Integrate LLM (Ollama / HuggingFace)
+- Generate answers from retrieved context
+- Add evaluation + self-healing RAG
+- Deploy via FastAPI / HuggingFace Spaces
+
+
 💡 Key Learnings
-Designing modular ML pipelines with Kedro
-Building scalable RAG systems
-Working with vector databases and embeddings
-Structuring production-ready ML projects
+- Designing modular ML pipelines with Kedro
+- Building scalable RAG systems
+- Working with vector databases and embeddings
+- Structuring production-ready ML projects
