@@ -15,17 +15,7 @@ Retrieve relevant context for user queries
 
 
 🏗️ Architecture
-PDFs
-  ↓
-Text Extraction
-  ↓
-Chunking (LangChain)
-  ↓
-Embeddings
-  ↓
-FAISS Vector Store
-  ↓
-Query → Semantic Retrieval
+PDFs -> Text Extraction -> Chunking -> Embeddings -> FAISS Vector Store -> Query -> Semantic Retrieval
 
 
 ⚙️ Tech Stack
