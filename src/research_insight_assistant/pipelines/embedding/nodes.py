@@ -18,8 +18,8 @@ os.environ["HF_TOKEN"] = os.getenv("hf_token")
 #     return vectorstore
 
 def create_faiss_index(chunks: List[str]):
-    print(f"Number of chunks: {len(chunks)}")
-    print(f"First chunk: {chunks[0] if chunks else 'EMPTY'}")
+    # print(f"Number of chunks: {len(chunks)}")
+    # print(f"First chunk: {chunks[0] if chunks else 'EMPTY'}")
     
     embeddings = HuggingFaceEmbeddings(
         model="sentence-transformers/all-MiniLM-L6-v2"

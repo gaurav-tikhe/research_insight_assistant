@@ -7,6 +7,7 @@ from research_insight_assistant.pipelines.data_ingestion.pipeline import create_
 from research_insight_assistant.pipelines.chunking.pipeline import create_pipeline as chunking_pipeline
 from research_insight_assistant.pipelines.embedding.pipeline import create_pipeline as embedding_pipeline 
 from research_insight_assistant.pipelines.retrieval.pipeline import create_pipeline as retrieval_pipeline
+from research_insight_assistant.pipelines.generation.pipeline import create_pipeline as generation_pipeline
 
 
 def register_pipelines() -> dict[str, Pipeline]:
@@ -16,5 +17,9 @@ def register_pipelines() -> dict[str, Pipeline]:
         A mapping from pipeline names to ``Pipeline`` objects.
     """
     return {
-        "__default__": ingestion_pipeline() + chunking_pipeline() + embedding_pipeline() + retrieval_pipeline(),
+        "__default__": ingestion_pipeline() 
+                       + chunking_pipeline() 
+                       + embedding_pipeline() 
+                       + retrieval_pipeline()
+                       + generation_pipeline(),
     }
