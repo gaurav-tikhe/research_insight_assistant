@@ -30,5 +30,5 @@ def generate_answer(query: str, retrieved_chunks: List[str]) -> str:
     sources = [f"[Chunk {i}] {doc[:200]}" for i, doc in enumerate(retrieved_chunks)]
     
     answer_json = {"answer": answer, "sources": sources}
-    print(f"Answer: {answer_json}")
+    # print(f"Answer: {answer_json}")
     return answer_json
